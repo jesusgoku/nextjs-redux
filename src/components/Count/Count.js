@@ -4,14 +4,16 @@ import { connect } from 'react-redux';
 
 import { actions } from '@app/store/reducers/count';
 
+import styles from './Count.module.css';
+
 function Count({ count, increment, decrement }) {
   return (
-    <div className="Count">
-      <p>{count}</p>
-      <button type="button" onClick={increment}>
+    <div className={styles.Count}>
+      <p className={styles.Count__Label}>{count}</p>
+      <button type="button" onClick={increment} className={styles.Count__Button}>
         increment
       </button>
-      <button type="button" onClick={decrement}>
+      <button type="button" onClick={decrement} className={styles.Count__Button}>
         decrement
       </button>
     </div>

@@ -1,0 +1,14 @@
+.Count {
+  border: 1px solid #eaeaea;
+  padding: 20px;
+
+  text-align: center;
+}
+
+.Count__Label {
+  font-size: 92px;
+}
+
+.Count__Button {
+  font-size: 20px;
+}
