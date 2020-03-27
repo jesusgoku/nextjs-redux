@@ -2,7 +2,7 @@ import NextApp from 'next/app';
 import { Provider } from 'react-redux';
 import withRedux from 'next-redux-wrapper';
 
-import store from '../store';
+import store from '@app/store';
 
 class App extends NextApp {
   static async getInitialProps({ Component, ctx }) {
