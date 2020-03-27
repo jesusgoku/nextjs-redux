@@ -1,3 +1,7 @@
+docker-compose*.yml
+Dockerfile
+.git/
+
 # Use yarn.lock
 package-lock.json
 

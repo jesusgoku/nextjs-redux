@@ -1,0 +1,8 @@
+version: "3.4"
+
+services:
+  app:
+    image: nextjs-redux:${VERSION:-latest}
+    build:
+      context: .
+      dockerfile: ./Dockerfile
