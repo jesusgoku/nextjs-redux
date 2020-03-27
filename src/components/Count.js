@@ -8,8 +8,12 @@ function Count({ count, increment, decrement }) {
   return (
     <div className="Count">
       <p>{count}</p>
-      <button type="button" onClick={increment}>increment</button>
-      <button type="button" onClick={decrement}>decrement</button>
+      <button type="button" onClick={increment}>
+        increment
+      </button>
+      <button type="button" onClick={decrement}>
+        decrement
+      </button>
     </div>
   );
 }
@@ -20,7 +24,7 @@ Count.propTypes = {
   decrement: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   count: state.count,
 });
 
